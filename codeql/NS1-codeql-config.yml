@@ -3,4 +3,6 @@ disable-default-queries: true
 queries:
   - name: Use the custom query suite file from this repo
     uses: ns1/NS1QLPacks/codeql/javascript/NS1-security.qls@main
+    uses: ns1/NS1QLPacks/codeql/java/NS1-security.qls@main
+    
     
