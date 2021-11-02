@@ -6,14 +6,15 @@ run: echo LANGUAGE DETECTED is ${{ matrix.language }}
 
 queries:
   - name: custom javascript
-    if: matrix.language == 'javascript'
     uses: ns1/NS1QLPacks/codeql/javascript/NS1-security.qls@main
+    if: ${{ matrix.language == 'javascript' }}
         
   - name: custom java
-    if: matrix.language == 'java'   
     uses: ns1/NS1QLPacks/codeql/java/NS1-security.qls@main
+    if: ${{ matrix.language == 'java' }}   
     
   - name: custom cpp
-    if: matrix.language == 'cpp'   
     uses: ns1/NS1QLPacks/codeql/cpp/NS1-security.qls@main
+    if: ${{ matrix.language == 'cpp' }}   
+    
 
