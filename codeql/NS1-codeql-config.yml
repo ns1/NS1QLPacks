@@ -2,6 +2,8 @@ name: "CodeQL code scanning custom configuration"
 
 disable-default-queries: true
 
+run: echo LANGUAGE DETECTED is ${{ matrix.language }}
+
 queries:
   - name: custom javascript
     if: matrix.language == 'javascript'
