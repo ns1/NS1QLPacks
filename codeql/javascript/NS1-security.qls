@@ -1,4 +1,4 @@
 - qlpack: codeql-javascript
-- apply: codeql-suites/javascript-security-extended.qls
+- apply: codeql-suites/javascript-security.qls
   from: codeql-javascript
   
