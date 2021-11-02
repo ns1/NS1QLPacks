@@ -2,12 +2,12 @@ name: "CodeQL code scanning custom configuration"
 
 disable-default-queries: true
 
-if: matrix.language == 'javascript' 
 queries:
   - name: custom javascript
+    if: matrix.language == 'javascript'
     uses: ns1/NS1QLPacks/codeql/javascript/NS1-security.qls@main
         
-if: matrix.language == 'java' 
-queries:
   - name: custom java
+    if: matrix.language == 'java'   
     uses: ns1/NS1QLPacks/codeql/java/NS1-security.qls@main
+
