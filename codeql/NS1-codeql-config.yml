@@ -1,0 +1,5 @@
+name: "CodeQL code scanning custom configuration"
+
+disable-default-queries: true
+
+run: echo LANGUAGE DETECTED is ${{ matrix.language }}
