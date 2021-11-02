@@ -1,10 +1,13 @@
 name: "CodeQL code scanning custom configuration"
+
 disable-default-queries: true
-queries:
-  javascript:
+
+javascript: 
+  queries:
     - name: custom javascript
       uses: ns1/NS1QLPacks/codeql/javascript/NS1-security.qls@main
-  java:
+java:
+  queries:
     - name: custom java
       uses: ns1/NS1QLPacks/codeql/java/NS1-security.qls@main
     
