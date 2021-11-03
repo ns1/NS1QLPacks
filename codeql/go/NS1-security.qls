@@ -1,0 +1,4 @@
+- qlpack: codeql-go
+- apply: codeql-suites/go-security-extended.qls
+  from: codeql-go
+  
