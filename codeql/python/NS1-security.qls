@@ -1,0 +1,4 @@
+- qlpack: codeql-python
+- apply: codeql-suites/python-security-extended.qls
+  from: codeql-python
+  
