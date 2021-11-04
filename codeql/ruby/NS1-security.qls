@@ -1,0 +1,5 @@
+
+- qlpack: codeql-ruby
+- apply: codeql-suites/ruby-security-extended.qls
+  from: codeql-ruby
+  
