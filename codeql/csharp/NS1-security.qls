@@ -1,0 +1,4 @@
+- qlpack: codeql-csharp
+- apply: codeql-suites/csharp-security-extended.qls
+  from: codeql-csharp
+  
